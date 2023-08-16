@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+input[type="radio"] {
+  display: none;
+}
+label:hover {
+  background-color: red;
+}
+label:active {
+  padding: 1rem;
+  border: 1rem solid green;
+}
+
+.navbarCategories {
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .leftSectionCategories {
+    margin-top: 5rem;
+    h1{
+        color: green;
+        font-size: 5rem;
+    }
+  }
+  .rightSectionCategories {
+    margin-top: 5rem;
+  }
+  .radio-Section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    gap: 1rem;
+    cursor: pointer;
+
+    label {
+      cursor: pointer;
+      color: white;
+    }
+  }
+
+  .category-filter {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .gameLists {
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 5rem;
+    }
+
+@media screen and (max-width:1400px)
+{
+    .gameLists{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cardContainer{
+        width: 50rem;
+        
+    }
+    .radio-Section{
+        font-size: 5rem;
+        
+    }
+    .rightSectionCategories
+    {
+        h1{
+            font-size: 5rem;
+        }
+        select{
+            font-size: 3rem;
+            padding: 2rem;
+        }
+    }
+}
+@media screen and (max-width:1050px)
+{
+    .gameLists{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardContainer{
+        width: 70rem;
+    }
+}
+@media screen and (max-width:730px)
+{
+        .cardContainer{
+            width: 50rem;
+        }
+}
+@media screen and (max-width:545px)
+{
+    .cardContainer{
+        width: 40rem;
+    }
+}
+@media screen and (max-width:500px)
+{
+    .rightSectionCategories
+    {
+        h1{
+            font-size: 4rem;
+        }
+        select{
+            font-size: 3rem;
+            padding: 2rem;
+        }
+    }
+    .leftSectionCategories{
+        h1{
+            font-size: 4rem;
+        }
+    }
+}
+@media screen and (max-width:430px)
+{
+
+}
+}
+
+    

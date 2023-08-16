@@ -1,0 +1,36 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+.categoriesContainer{
+    border: .5rem solid black;
+    background-color: black;
+    .carouselHandler{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    .myExploreButton{
+        margin-top: 2%;
+        margin-left: 47%;
+    }
+ @media screen and (max-width:500px)
+ {
+    .myExploreButton{
+        margin-left: 40%;
+    }
+ }   
+ @media screen and (max-width:400px)
+ {
+    .myExploreButton{
+        margin-left: 37%;
+    }
+ }   
+ 
+}

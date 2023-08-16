@@ -1,0 +1,35 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+.cardContainer{
+    margin: 0 auto;
+    margin-top: 5rem;
+   width: 25rem;
+   height: 40rem;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   align-items: center;
+   justify-content: center;
+    border: .5rem solid black;
+    background-color: black;
+    color: white;
+    border: .3rem solid red;
+    cursor: pointer;
+    .icons{
+        font-size: 3rem;
+    }
+    .price{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+    }
+}

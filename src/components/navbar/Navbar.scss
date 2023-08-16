@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.Navbar {
+  background-color: var(--primary-text-color);
+  height: 11rem;
+  z-index: 99;
+  color: white;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .nav-left {
+      .logo {
+        width: 11rem;
+        height: 10rem;
+        cursor: pointer;
+      }
+    }
+
+    .nav-center {
+      .link-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10rem;
+        font-size: 3rem;
+
+        .link-hover {
+          list-style: none;
+        }
+      }
+    }
+
+    .nav-right{
+        .nav-cart{
+            position: relative;
+            padding: 6px;
+            .icon{
+                font-size: 2rem;
+            }
+            .cart-count{
+                position: absolute;
+                width: 1.6rem;
+                height: 1.6rem;
+                top: -4px;
+                right: -2px;
+                background-color: var(--accent-color);
+                color: white;
+                font-size: 1rem;
+                border-radius: 50%;
+                
+            }
+        }
+    }
+  }
+
+  @media screen and (max-width:965px)
+{
+  .link-hover{
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width:875px)
+{
+  .link-hover{
+    font-size: 2rem;
+  }
+  .best-seller-section
+  {
+    border: .5rem solid red;
+  }
+}
+@media screen and (max-width:780px)
+{
+  .link-hover{
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width:740px)
+{
+  .link-hover{
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width:680px)
+{
+  .link-hover{
+    display: none;
+  }
+  
+}
+
+
+
+}
